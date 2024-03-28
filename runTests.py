@@ -11,5 +11,6 @@ class TestStringUtils(unittest.TestCase):
     def test_capitalize(self):
         self.assertEqual(su.capitalize("clickup"), "Clickup")
 
+
 if __name__ == "__main__":
     unittest.main()
