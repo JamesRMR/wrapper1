@@ -10,7 +10,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Checkout code
-            run: git checkout development
+            uses: actions/checkout@v2
+            with:
+              ref: development
               
 
           - name: Set ip python
@@ -25,7 +27,9 @@ jobs:
             run: python runTests.py
 
           - name: Checkout main branch
-            run: git checkout main
+            uses: actions/checkout@v2
+            with:
+              ref: main
 
           - name: Merge to main if tests pass
             if: ${{ success() }}
