@@ -41,5 +41,5 @@ jobs:
                 git pull
                 git checkout main
                 git pull
-                git merge origin/development 
+                git merge development 
                 git push origin main
