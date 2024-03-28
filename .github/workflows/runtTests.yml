@@ -3,7 +3,7 @@ name: Test String Utility Functions
 on:
     push:
         branches:
-            -development
+          - development
 
 jobs:
     test:
